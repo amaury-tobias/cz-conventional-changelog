@@ -45,7 +45,42 @@
   },
   "config": {
     "commitizen": {
-      "path": "./index.js"
+      "path": "./index.js",
+      "emojis": true,
+      "types": {
+        "chore": {
+          "description": "Other changes that don't modify src or test files",
+          "emoji": "🤹‍♂️"
+        },
+        "docs": {
+          "description": "Documentation only changes",
+          "emoji": "📝"
+        },
+        "feat": {
+          "description": "A new feature",
+          "emoji": "🚀"
+        },
+        "fix": {
+          "description": "A bug fix",
+          "emoji": "🐛"
+        },
+        "perf": {
+          "description": "A code change that improves performance",
+          "emoji": "🔥"
+        },
+        "refactor": {
+          "description": "A code change that neither fixes a bug or adds a feature",
+          "emoji": "💅"
+        },
+        "style": {
+          "description": "Markup, white-space, formatting, missing semi-colons...",
+          "emoji": "💄"
+        },
+        "test": {
+          "description": "Adding missing tests",
+          "emoji": "👓"
+        }
+      }
     }
   }
 }

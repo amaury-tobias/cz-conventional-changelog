@@ -201,6 +201,8 @@ module.exports = function(options) {
         // Hard limit this line in the validate
         var head = answers.type + scope + ': ' + answers.subject;
 
+        var emoji = options.emojis ? options.types[answers.type].emoji : '';
+
         // Wrap these lines at options.maxLineWidth characters
         var body = answers.body ? wrap(answers.body, wrapOptions) : false;
 
