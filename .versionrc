@@ -1,0 +1,37 @@
+{
+  "releaseCommitMessageFormat": "chore(release): 🏹 {{currentTag}}",
+  "types": [
+    {
+      "type": "feat",
+      "section": "🚀 Features"
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "section": "🤖 Chore"
+    },
+    {
+      "type": "docs",
+      "section": "📝 Documentation"
+    },
+    {
+      "type": "style",
+      "section": "💄 Style"
+    },
+    {
+      "type": "refactor",
+      "section": "💡 Refactors"
+    },
+    {
+      "type": "perf",
+      "section": "⚡️ Performance"
+    },
+    {
+      "type": "test",
+      "section": "👓 Tests"
+    }
+  ]
+}
