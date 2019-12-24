@@ -42,32 +42,15 @@ module.exports = function(options) {
 
   var length = longest(Object.keys(types)).length + 1;
   var choices = map(types, function(type, key) {
+    var emoji = options.emojis ? type.emoji + ' ' : '';
     return {
-      name: rightPad(key + ':', length) + ' ' + type.description,
+      name: rightPad(emoji + key + ':', length) + ' ' + type.description,
       value: key
     };
   });
 
   return {
-    // When a user runs `git cz`, prompter will
-    // be executed. We pass you cz, which currently
-    // is just an instance of inquirer.js. Using
-    // this you can ask questions and get answers.
-    //
-    // The commit callback should be executed when
-    // you're ready to send back a commit template
-    // to git.
-    //
-    // By default, we'll de-indent your commit
-    // template and will keep empty lines.
     prompter: function(cz, commit) {
-      // Let's ask some questions of the user
-      // so that we can populate our commit
-      // template.
-      //
-      // See inquirer.js docs for specifics.
-      // You can also opt to use another input
-      // collection library if you prefer.
       cz.prompt([
         {
           type: 'list',
@@ -198,10 +181,12 @@ module.exports = function(options) {
         // parentheses are only needed when a scope is present
         var scope = answers.scope ? '(' + answers.scope + ')' : '';
 
-        var emoji = options.emojis ? options.types[answers.type].emoji + ' ' : '';
+        var emoji = options.emojis
+          ? options.types[answers.type].emoji + ' '
+          : '';
 
         // Hard limit this line in the validate
-        var head = answers.type + scope + ': '+ emoji + answers.subject;
+        var head = answers.type + scope + ': ' + emoji + answers.subject;
 
         // Wrap these lines at options.maxLineWidth characters
         var body = answers.body ? wrap(answers.body, wrapOptions) : false;
