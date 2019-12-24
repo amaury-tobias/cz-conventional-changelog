@@ -4,10 +4,7 @@
   "description": "Commitizen adapter following the conventional-changelog format.",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz",
-    "test": "mocha *.test.js",
-    "format": "prettier --write *.js",
-    "semantic-release": "semantic-release"
+    "format": "prettier --write *.js"
   },
   "homepage": "https://github.com/commitizen/cz-conventional-changelog",
   "repository": {
@@ -23,64 +20,13 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "commitizen": "^4.0.3",
-    "conventional-commit-types": "^2.3.0",
+    "conventional-commit-types": "^3.0.0",
     "lodash.map": "^4.6.0",
     "longest": "^2.0.1",
     "right-pad": "^1.0.1",
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.7",
-    "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "cosmiconfig": "^6.0.0",
-    "mocha": "^6.2.2",
-    "mock-require": "^3.0.3",
-    "prettier": "^1.19.1",
-    "semantic-release": "^15.13.31",
-    "semver": "^7.1.1"
-  },
-  "optionalDependencies": {
-    "@commitlint/load": ">8.2.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./index.js",
-      "emojis": true,
-      "types": {
-        "chore": {
-          "description": "Other changes that don't modify src or test files",
-          "emoji": "🤹‍♂️"
-        },
-        "docs": {
-          "description": "Documentation only changes",
-          "emoji": "📝"
-        },
-        "feat": {
-          "description": "A new feature",
-          "emoji": "🚀"
-        },
-        "fix": {
-          "description": "A bug fix",
-          "emoji": "🐛"
-        },
-        "perf": {
-          "description": "A code change that improves performance",
-          "emoji": "🔥"
-        },
-        "refactor": {
-          "description": "A code change that neither fixes a bug or adds a feature",
-          "emoji": "💅"
-        },
-        "style": {
-          "description": "Markup, white-space, formatting, missing semi-colons...",
-          "emoji": "💄"
-        },
-        "test": {
-          "description": "Adding missing tests",
-          "emoji": "👓"
-        }
-      }
-    }
+    "prettier": "^1.19.1"
   }
 }
