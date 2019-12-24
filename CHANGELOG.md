@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/commitizen/cz-conventional-changelog/compare/v0.0.0...v4.0.0) (2019-12-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🧨new tests are writed in a future
+
+### 👓 Tests
+
+* 👓 remove engine test ([fa707e9](https://github.com/commitizen/cz-conventional-changelog/commit/fa707e98a6ea208ea6969f9f687176bf5b2dd3fa))
+
+
+### 📝 Documentation
+
+* 📝 fix emojis on `CHANGELOG.md` ([4662782](https://github.com/commitizen/cz-conventional-changelog/commit/46627822ef02571ba41845724110b7c7276fc11b))
+
+
+### 🤖 Chore
+
+* 🤖 add `.versionrc` ([9aeec96](https://github.com/commitizen/cz-conventional-changelog/commit/9aeec96923eb7fa81513fee8ea215ee7142981e9))
+
 ## [0.0.0](https://github.com/commitizen/cz-conventional-changelog/compare/v3.0.2...v0.0.0) (2019-12-24)
 
 
